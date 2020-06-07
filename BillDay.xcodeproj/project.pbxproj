@@ -3,18 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461F15DF248D481A004F5E30 /* Kconstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461F15DE248D481A004F5E30 /* Kconstants.swift */; };
 		464F93572489781F005DC047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F93562489781F005DC047 /* AppDelegate.swift */; };
 		464F93592489781F005DC047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F93582489781F005DC047 /* SceneDelegate.swift */; };
-		464F935B2489781F005DC047 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F935A2489781F005DC047 /* ViewController.swift */; };
-		464F935E2489781F005DC047 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464F935C2489781F005DC047 /* Main.storyboard */; };
 		464F936024897822005DC047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 464F935F24897822005DC047 /* Assets.xcassets */; };
 		464F936324897822005DC047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464F936124897822005DC047 /* LaunchScreen.storyboard */; };
 		464F936E24897822005DC047 /* BillDayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F936D24897822005DC047 /* BillDayTests.swift */; };
 		464F937924897823005DC047 /* BillDayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F937824897823005DC047 /* BillDayUITests.swift */; };
+		464F9388248979FF005DC047 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F9387248979FF005DC047 /* BaseViewController.swift */; };
+		464F938A24897A55005DC047 /* BaseConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464F938924897A55005DC047 /* BaseConfigurator.swift */; };
+		4651D3C0248D03ED00FD9CEE /* BillViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4651D3BF248D03ED00FD9CEE /* BillViewModelTest.swift */; };
+		46A6289D24897DCA00FD6282 /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6289524897DCA00FD6282 /* BillViewController.swift */; };
+		46A6289E24897DCA00FD6282 /* BillProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6289624897DCA00FD6282 /* BillProtocols.swift */; };
+		46A6289F24897DCA00FD6282 /* BillPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6289724897DCA00FD6282 /* BillPresenterImpl.swift */; };
+		46A628A024897DCA00FD6282 /* BillRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6289824897DCA00FD6282 /* BillRouterImpl.swift */; };
+		46A628A124897DCA00FD6282 /* BillInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6289924897DCA00FD6282 /* BillInteractorImpl.swift */; };
+		46A628A224897DCA00FD6282 /* BillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6289A24897DCA00FD6282 /* BillViewModel.swift */; };
+		46A628A324897DCA00FD6282 /* BillConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6289B24897DCA00FD6282 /* BillConfigurator.swift */; };
+		46A628A424897DCA00FD6282 /* BillViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A6289C24897DCA00FD6282 /* BillViewController.xib */; };
+		46A628A724897EE600FD6282 /* BaseApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A628A624897EE600FD6282 /* BaseApiClient.swift */; };
+		46A628AC2489865600FD6282 /* BillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A628AA2489865600FD6282 /* BillTableViewCell.swift */; };
+		46A628AD2489865600FD6282 /* BillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A628AB2489865600FD6282 /* BillTableViewCell.xib */; };
+		46A628B02489876100FD6282 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 46A628AF2489876100FD6282 /* Alamofire */; };
+		46A628B22489883D00FD6282 /* BillResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A628B12489883D00FD6282 /* BillResponse.swift */; };
+		46E79C27248998490044AE26 /* HeaderBillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E79C25248998490044AE26 /* HeaderBillTableViewCell.swift */; };
+		46E79C28248998490044AE26 /* HeaderBillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E79C26248998490044AE26 /* HeaderBillTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +52,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		461F15DE248D481A004F5E30 /* Kconstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kconstants.swift; sourceTree = "<group>"; };
 		464F93532489781F005DC047 /* BillDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		464F93562489781F005DC047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		464F93582489781F005DC047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		464F935A2489781F005DC047 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		464F935D2489781F005DC047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		464F935F24897822005DC047 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		464F936224897822005DC047 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		464F936424897822005DC047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +65,23 @@
 		464F937424897822005DC047 /* BillDayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillDayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		464F937824897823005DC047 /* BillDayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDayUITests.swift; sourceTree = "<group>"; };
 		464F937A24897823005DC047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		464F9387248979FF005DC047 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		464F938924897A55005DC047 /* BaseConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConfigurator.swift; sourceTree = "<group>"; };
+		4651D3BF248D03ED00FD9CEE /* BillViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewModelTest.swift; sourceTree = "<group>"; };
+		46A6289524897DCA00FD6282 /* BillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewController.swift; sourceTree = "<group>"; };
+		46A6289624897DCA00FD6282 /* BillProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillProtocols.swift; sourceTree = "<group>"; };
+		46A6289724897DCA00FD6282 /* BillPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillPresenterImpl.swift; sourceTree = "<group>"; };
+		46A6289824897DCA00FD6282 /* BillRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillRouterImpl.swift; sourceTree = "<group>"; };
+		46A6289924897DCA00FD6282 /* BillInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInteractorImpl.swift; sourceTree = "<group>"; };
+		46A6289A24897DCA00FD6282 /* BillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewModel.swift; sourceTree = "<group>"; };
+		46A6289B24897DCA00FD6282 /* BillConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillConfigurator.swift; sourceTree = "<group>"; };
+		46A6289C24897DCA00FD6282 /* BillViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillViewController.xib; sourceTree = "<group>"; };
+		46A628A624897EE600FD6282 /* BaseApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseApiClient.swift; sourceTree = "<group>"; };
+		46A628AA2489865600FD6282 /* BillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillTableViewCell.swift; sourceTree = "<group>"; };
+		46A628AB2489865600FD6282 /* BillTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BillTableViewCell.xib; sourceTree = "<group>"; };
+		46A628B12489883D00FD6282 /* BillResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillResponse.swift; sourceTree = "<group>"; };
+		46E79C25248998490044AE26 /* HeaderBillTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBillTableViewCell.swift; sourceTree = "<group>"; };
+		46E79C26248998490044AE26 /* HeaderBillTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderBillTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A628B02489876100FD6282 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		461F15DD248D47F9004F5E30 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				461F15DE248D481A004F5E30 /* Kconstants.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		464F934A2489781F005DC047 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +141,9 @@
 		464F93552489781F005DC047 /* BillDay */ = {
 			isa = PBXGroup;
 			children = (
-				464F93562489781F005DC047 /* AppDelegate.swift */,
-				464F93582489781F005DC047 /* SceneDelegate.swift */,
-				464F935A2489781F005DC047 /* ViewController.swift */,
-				464F935C2489781F005DC047 /* Main.storyboard */,
+				464F938624897894005DC047 /* Code */,
+				46E79C29248A1FE10044AE26 /* Resourses */,
 				464F935F24897822005DC047 /* Assets.xcassets */,
-				464F936124897822005DC047 /* LaunchScreen.storyboard */,
-				464F936424897822005DC047 /* Info.plist */,
 			);
 			path = BillDay;
 			sourceTree = "<group>";
@@ -115,6 +153,7 @@
 			children = (
 				464F936D24897822005DC047 /* BillDayTests.swift */,
 				464F936F24897822005DC047 /* Info.plist */,
+				4651D3BF248D03ED00FD9CEE /* BillViewModelTest.swift */,
 			);
 			path = BillDayTests;
 			sourceTree = "<group>";
@@ -126,6 +165,129 @@
 				464F937A24897823005DC047 /* Info.plist */,
 			);
 			path = BillDayUITests;
+			sourceTree = "<group>";
+		};
+		464F938624897894005DC047 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				461F15DD248D47F9004F5E30 /* Config */,
+				46A628B32489899E00FD6282 /* Model */,
+				464F938B24897A93005DC047 /* Bill */,
+				46A628A524897EAB00FD6282 /* Base */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		464F938B24897A93005DC047 /* Bill */ = {
+			isa = PBXGroup;
+			children = (
+				4654D9A0248D9CBB00B02F8F /* Configurator */,
+				4654D9A1248D9CD800B02F8F /* Protocols */,
+				4654D9A2248D9CF600B02F8F /* Presenter */,
+				4654D9A3248D9D0F00B02F8F /* Router */,
+				4654D9A4248D9D2C00B02F8F /* Interactor */,
+				4654D9A5248D9D5B00B02F8F /* ViewModel */,
+				46A628A82489860400FD6282 /* view */,
+			);
+			path = Bill;
+			sourceTree = "<group>";
+		};
+		4654D9A0248D9CBB00B02F8F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				46A6289B24897DCA00FD6282 /* BillConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		4654D9A1248D9CD800B02F8F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				46A6289624897DCA00FD6282 /* BillProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4654D9A2248D9CF600B02F8F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				46A6289724897DCA00FD6282 /* BillPresenterImpl.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		4654D9A3248D9D0F00B02F8F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				46A6289824897DCA00FD6282 /* BillRouterImpl.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4654D9A4248D9D2C00B02F8F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				46A6289924897DCA00FD6282 /* BillInteractorImpl.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4654D9A5248D9D5B00B02F8F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				46A6289A24897DCA00FD6282 /* BillViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		46A628A524897EAB00FD6282 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				464F9387248979FF005DC047 /* BaseViewController.swift */,
+				464F938924897A55005DC047 /* BaseConfigurator.swift */,
+				46A628A624897EE600FD6282 /* BaseApiClient.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		46A628A82489860400FD6282 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				46A628A92489862800FD6282 /* Cell */,
+				46A6289524897DCA00FD6282 /* BillViewController.swift */,
+				46A6289C24897DCA00FD6282 /* BillViewController.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		46A628A92489862800FD6282 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				46A628AA2489865600FD6282 /* BillTableViewCell.swift */,
+				46A628AB2489865600FD6282 /* BillTableViewCell.xib */,
+				46E79C25248998490044AE26 /* HeaderBillTableViewCell.swift */,
+				46E79C26248998490044AE26 /* HeaderBillTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		46A628B32489899E00FD6282 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46A628B12489883D00FD6282 /* BillResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46E79C29248A1FE10044AE26 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				464F93562489781F005DC047 /* AppDelegate.swift */,
+				464F93582489781F005DC047 /* SceneDelegate.swift */,
+				464F936124897822005DC047 /* LaunchScreen.storyboard */,
+				464F936424897822005DC047 /* Info.plist */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +306,9 @@
 			dependencies = (
 			);
 			name = BillDay;
+			packageProductDependencies = (
+				46A628AF2489876100FD6282 /* Alamofire */,
+			);
 			productName = BillDay;
 			productReference = 464F93532489781F005DC047 /* BillDay.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +381,9 @@
 				Base,
 			);
 			mainGroup = 464F934A2489781F005DC047;
+			packageReferences = (
+				46A628AE2489876100FD6282 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 464F93542489781F005DC047 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,9 +400,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E79C28248998490044AE26 /* HeaderBillTableViewCell.xib in Resources */,
+				46A628AD2489865600FD6282 /* BillTableViewCell.xib in Resources */,
 				464F936324897822005DC047 /* LaunchScreen.storyboard in Resources */,
+				46A628A424897DCA00FD6282 /* BillViewController.xib in Resources */,
 				464F936024897822005DC047 /* Assets.xcassets in Resources */,
-				464F935E2489781F005DC047 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +429,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				464F935B2489781F005DC047 /* ViewController.swift in Sources */,
+				46A6289E24897DCA00FD6282 /* BillProtocols.swift in Sources */,
+				46A628A724897EE600FD6282 /* BaseApiClient.swift in Sources */,
+				46A628AC2489865600FD6282 /* BillTableViewCell.swift in Sources */,
+				461F15DF248D481A004F5E30 /* Kconstants.swift in Sources */,
+				464F9388248979FF005DC047 /* BaseViewController.swift in Sources */,
+				46A628A124897DCA00FD6282 /* BillInteractorImpl.swift in Sources */,
+				464F938A24897A55005DC047 /* BaseConfigurator.swift in Sources */,
+				46A628A024897DCA00FD6282 /* BillRouterImpl.swift in Sources */,
 				464F93572489781F005DC047 /* AppDelegate.swift in Sources */,
 				464F93592489781F005DC047 /* SceneDelegate.swift in Sources */,
+				46A628B22489883D00FD6282 /* BillResponse.swift in Sources */,
+				46A6289D24897DCA00FD6282 /* BillViewController.swift in Sources */,
+				46E79C27248998490044AE26 /* HeaderBillTableViewCell.swift in Sources */,
+				46A628A224897DCA00FD6282 /* BillViewModel.swift in Sources */,
+				46A6289F24897DCA00FD6282 /* BillPresenterImpl.swift in Sources */,
+				46A628A324897DCA00FD6282 /* BillConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				464F936E24897822005DC047 /* BillDayTests.swift in Sources */,
+				4651D3C0248D03ED00FD9CEE /* BillViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +481,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		464F935C2489781F005DC047 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				464F935D2489781F005DC047 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		464F936124897822005DC047 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,7 +612,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F9SZK4LV4Q;
-				INFOPLIST_FILE = BillDay/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BillDay/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,7 +630,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F9SZK4LV4Q;
-				INFOPLIST_FILE = BillDay/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BillDay/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -590,6 +766,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46A628AE2489876100FD6282 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46A628AF2489876100FD6282 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46A628AE2489876100FD6282 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 464F934B2489781F005DC047 /* Project object */;
 }
