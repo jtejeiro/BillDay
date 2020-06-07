@@ -143,7 +143,6 @@
 			children = (
 				464F938624897894005DC047 /* Code */,
 				46E79C29248A1FE10044AE26 /* Resourses */,
-				464F935F24897822005DC047 /* Assets.xcassets */,
 			);
 			path = BillDay;
 			sourceTree = "<group>";
@@ -282,6 +281,7 @@
 		46E79C29248A1FE10044AE26 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
+				464F935F24897822005DC047 /* Assets.xcassets */,
 				464F93562489781F005DC047 /* AppDelegate.swift */,
 				464F93582489781F005DC047 /* SceneDelegate.swift */,
 				464F936124897822005DC047 /* LaunchScreen.storyboard */,
